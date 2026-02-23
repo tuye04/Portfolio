@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuye | Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">tuye<span>.</span></a>
+                <div class="nav-right">
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#articles">Articles</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                    <button class="hamburger" id="menuToggle"><i class="fas fa-bars"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Engineering digital experiences with precision.</h1>
+            <p class="hero-subtitle">Software Engineer specializing in modern web applications.</p>
+            <div class="specialization-badge">
+                <span class="frontend-pill">40% Frontend Focus</span>
+                <span class="backend-pill">60% Backend Integration</span>
+            </div>
+            <br>
+            <a href="#projects" class="cta-button">View My Work <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <h3>Frontend Engineering</h3>
+                    <p>React, Vue, TypeScript, state management, and performance optimization.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Node.js, Python, REST APIs, and database architecture.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <h3>DevOps & Tools</h3>
+                    <p>Git, Docker, CI/CD, and Agile development methodologies.</p>
+                </div>
+            </div>
+
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="marquee-item"><i class="fab fa-react"></i> React</div>
+                    <div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div>
+                    <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+                    <div class="marquee-item"><i class="fab fa-git-alt"></i> Git</div>
+                    <div class="marquee-item"><i class="fab fa-docker"></i> Docker</div>
+                    <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    <div class="marquee-item"><i class="fab fa-js"></i> JavaScript</div>
+                    <div class="marquee-item"><i class="fab fa-react"></i> React</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img"><i class="fas fa-chart-line"></i></div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p>Real-time data visualization platform.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">D3.js</span>
+                        </div>
+                        <a href="https://github.com/tuye04" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img"><i class="fas fa-shopping-bag"></i></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Suite</h3>
+                        <p>Global commerce solution with Stripe integration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Node.js</span>
+                        </div>
+                        <a href="https://github.com/tuye04" target="_blank" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="articles-section" id="articles">
+        <div class="container">
+            <h2 class="section-title">Writing</h2>
+            <a href="https://medium.com/@isackosharamo/rendering-user-interface-in-react-db6d5b0da4f8" target="_blank" class="article-card">
+                <div class="article-image">
+                    <img src="Image/medium-image.png" alt="DOM vs HTML Visualization">
+                </div>
+                <div class="article-info">
+                    <span style="color:var(--accent); font-weight:600; font-size:0.8rem;">REACT FUNDAMENTALS</span>
+                    <h3 style="font-size:1.8rem; margin:10px 0;">Rendering User Interface in React</h3>
+                    <p style="color:var(--text-secondary);">Relationship between HTML, DOM, and Virtual DOM.</p>
+                    <span class="read-more">Read on Medium <i class="fas fa-external-link-alt"></i></span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <img src="Image/profile-image.jpeg" alt="Profile" class="profile-img reveal">
+                <div class="reveal">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 20px;">Building bridges between design and functionality.</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">40% Frontend Focus | 60% Backend Integration.</p>
+                    <div class="contact-links">
+                        <a href="https://github.com/tuye04" target="_blank" class="contact-link"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="contact-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="mailto:hello@example.com" class="contact-link"><i class="fas fa-envelope"></i> Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ISSACO TUYE. Crafted with precision.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
