@@ -20,6 +20,9 @@ function updateThemeIcon(theme) {
     themeToggle.querySelector('i').className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
 }
 
+// --- Auto Year Update ---
+document.getElementById('year').textContent = new Date().getFullYear();
+
 // --- Hamburger Logic ---
 function toggleMenu() {
     const isOpening = !navLinks.classList.contains('active');
