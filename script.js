@@ -1,42 +1,42 @@
 const themeToggle = document.getElementById('themeToggle');
-        const menuToggle = document.getElementById('menuToggle');
-        const navLinks = document.getElementById('navLinks');
-        const body = document.body;
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.getElementById('navLinks');
+const body = document.body;
 
-        // --- Theme Logic ---
-        const savedTheme = localStorage.getItem('dark');
-        body.setAttribute('data-theme', savedTheme);
-        updateThemeIcon(savedTheme);
+// --- Theme Logic ---
+const savedTheme = localStorage.getItem('theme') || 'dark';
+body.setAttribute('data-theme', savedTheme);
+updateThemeIcon(savedTheme);
 
-        themeToggle.addEventListener('click', () => {
-            const currentTheme = body.getAttribute('data-theme');
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            body.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
+themeToggle.addEventListener('click', () => {
+    const currentTheme = body.getAttribute('data-theme');
+    const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+    body.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+    updateThemeIcon(newTheme);
+});
 
-        function updateThemeIcon(theme) {
-            themeToggle.querySelector('i').className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
-        }
+function updateThemeIcon(theme) {
+    themeToggle.querySelector('i').className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+}
 
-        // --- Hamburger Logic ---
-        function toggleMenu() {
-            const isOpening = !navLinks.classList.contains('active');
-            navLinks.classList.toggle('active');
-            menuToggle.querySelector('i').className = isOpening ? 'fas fa-times' : 'fas fa-bars';
-        }
+// --- Hamburger Logic ---
+function toggleMenu() {
+    const isOpening = !navLinks.classList.contains('active');
+    navLinks.classList.toggle('active');
+    menuToggle.querySelector('i').className = isOpening ? 'fas fa-times' : 'fas fa-bars';
+}
 
-        menuToggle.addEventListener('click', toggleMenu);
+menuToggle.addEventListener('click', toggleMenu);
 
-        // Auto-close menu when link clicked
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navLinks.classList.contains('active')) toggleMenu();
-            });
-        });
+// Auto-close menu when link clicked
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) toggleMenu();
+    });
+});
 
-        const observerOptions = {
+const observerOptions = {
     threshold: 0.15 // Triggers when 15% of the element is visible
 };
 
