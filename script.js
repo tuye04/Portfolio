@@ -4,7 +4,7 @@ const themeToggle = document.getElementById('themeToggle');
         const body = document.body;
 
         // --- Theme Logic ---
-        const savedTheme = localStorage.getItem('theme') || 'light';
+        const savedTheme = localStorage.getItem('dark');
         body.setAttribute('data-theme', savedTheme);
         updateThemeIcon(savedTheme);
 
